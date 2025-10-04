@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sugestão de Palavras - Glossário de Libras</title>
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/sugestao.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="container">
+            <div class="header-brand">IFSP - Câmpus Bragança Paulista</div>
+            <button id="hamburger-btn" class="hamburger-btn">☰</button>
+            <nav id="main-nav" class="main-nav">
+                <ul>
+                    <li><a href="home.html">Início</a></li>
+                    <li><a href="glossario.html">Glossário</a></li>
+                    <li><a href="sobrenos.html">Sobre Nós</a></li>
+                    <li><a href="sugestao.html">Sugestão de palavras</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                    <li id="admin-link" style="display: none;"><a href="admin-add.html">Admin</a></li>
+                    <li id="login-link"><a href="login.html">Login</a></li>
+                    <li id="user-icon-link" style="display: none;">
+                        <a href="#" class="user-icon"><i class="fas fa-user"></i></a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="suggestion-hero">
+            <div class="container">
+                <h1>Sugestão de palavras</h1>
+                <div class="star-divider">
+                    <i class="fas fa-star"></i>
+                </div>
+            </div>
+        </section>
+        <section class="suggestion-form-section">
+            <div class="container">
+                <form class="suggestion-form">
+                    <h3>Sugestão de palavras</h3>
+                    <textarea placeholder="Message" rows="8"></textarea>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    
+    <script src="js/main.js"></script>
+</body>
+</html>

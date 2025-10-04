@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes da Palavra - Glossário de Libras</title>
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/palavra.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="container">
+            <div class="header-brand">IFSP - Câmpus Bragança Paulista</div>
+            <button id="hamburger-btn" class="hamburger-btn">☰</button>
+            <nav id="main-nav" class="main-nav">
+                <ul>
+                    <li><a href="home.html">Início</a></li>
+                    <li><a href="glossario.html">Glossário</a></li>
+                    <li><a href="sobrenos.html">Sobre Nós</a></li>
+                    <li><a href="sugestao.html">Sugestão de palavras</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                    <li id="admin-link" style="display: none;"><a href="admin-add.html">Admin</a></li>
+                    <li id="login-link"><a href="login.html">Login</a></li>
+                    <li id="user-icon-link" style="display: none;">
+                        <a href="#" class="user-icon"><i class="fas fa-user"></i></a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="word-detail-page">
+            <h1 id="palavra-titulo">CARREGANDO...</h1>
+            <nav class="tabs-nav">
+                <button class="tab-button active" data-target="#significado">Significado palavra</button>
+                <button class="tab-button" data-target="#midia">Mídia(sinal)</button>
+                <button class="tab-button" data-target="#disciplina">Descrição Disciplina</button>
+            </nav>
+            <div class="word-details-container">
+                <div id="significado" class="tab-content active">
+                    <img id="palavra-icone" src="" alt="Ícone da Palavra">
+                    <p id="palavra-descricao"></p>
+                </div>
+                <div id="midia" class="tab-content">
+                    <div class="media-content">
+                        <div class="video-container">
+                            <img id="palavra-video" src="" alt="Vídeo do sinal em Libras">
+                        </div>
+                        <div class="signal-description">
+                            <p><strong>Descrição do sinal:</strong><br><span id="palavra-desc-sinal"></span></p>
+                        </div>
+                    </div>
+                </div>
+                <div id="disciplina" class="tab-content">
+                    <div class="discipline-info">
+                        <p><strong>Disciplina:</strong><br><span id="palavra-disciplina"></span></p>
+                        <p><strong>Semestre:</strong><br><span id="palavra-semestre"></span></p>
+                    </div>
+                </div>
+            </div>
+            <a href="listagem.html" class="btn-voltar">Voltar</a>
+        </div>
+    </main>
+
+    <script src="js/main.js"></script>
+    <script src="js/palavra.js"></script>
+</body>
+</html>

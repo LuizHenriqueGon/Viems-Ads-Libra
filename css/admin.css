@@ -1,0 +1,91 @@
+/* --- ESTILOS DA PÁGINA DE ADMIN --- */
+.admin-page {
+    padding: 40px 0;
+}
+
+.admin-page h1 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+.admin-form-container {
+    background-color: #0d2137;
+    color: #fff;
+    border-radius: 40px;
+    padding: 40px;
+}
+
+.form-columns {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.form-column {
+    flex: 1;
+    border-right: 2px solid #2a4a6e;
+    padding-right: 30px;
+}
+.form-column:last-child {
+    border-right: none;
+    padding-right: 0;
+}
+
+.form-column h3 {
+    margin-top: 0;
+    border-bottom: 1px solid #2a4a6e;
+    padding-bottom: 10px;
+}
+
+.form-column label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-column input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #f0f0f0;
+    color: #333;
+    box-sizing: border-box;
+}
+
+.form-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.btn-admin {
+    padding: 15px 50px;
+    border-radius: 25px;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    font-size: 1em;
+}
+.btn-admin.confirm {
+    background-color: #66CDAA;
+    color: #000;
+}
+.btn-admin.back {
+    background-color: #66CDAA;
+    color: #000;
+}
+
+@media (max-width: 768px) {
+    .form-columns {
+        flex-direction: column;
+    }
+    .form-column {
+        border-right: none;
+        padding-right: 0;
+    }
+}

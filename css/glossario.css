@@ -1,0 +1,180 @@
+/* --- ESTILOS ESPECÍFICOS DA PÁGINA GLOSSÁRIO --- */
+
+.sub-hero {
+    background-color: #1A5F7A;
+    color: #fff;
+    text-align: center;
+    padding: 15px 20px;
+    font-size: 1.1em;
+}
+.sub-hero p {
+    margin: 0;
+}
+
+.search-section {
+    padding: 40px 0;
+    text-align: center;
+}
+
+.search-section h1 {
+    font-size: 2.8em;
+    margin-top: 0;
+}
+
+.search-block {
+    margin-top: 40px;
+}
+
+.search-block h2 {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.disciplinas-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.disciplina-card {
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 20px;
+    text-decoration: none;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.disciplina-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+}
+
+.disciplina-card img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 15px;
+}
+
+.disciplina-card span {
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+/* --- ESTILOS DO MODAL DE DISCIPLINA --- */
+
+.modal-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.2);
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+    position: relative;
+}
+
+.modal-content .close-button {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #888;
+    cursor: pointer;
+}
+.modal-content .close-button:hover {
+    color: #000;
+}
+
+#modal-title {
+    margin-top: 0;
+    font-size: 2em;
+    color: #333;
+}
+
+.modal-content .star-divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15px 0;
+    gap: 15px;
+}
+.modal-content .star-divider::before,
+.modal-content .star-divider::after {
+    content: '';
+    height: 1px;
+    width: 80px;
+    background-color: #ccc;
+}
+.modal-content .star-divider .fa-star {
+    font-size: 1.2em;
+    color: #1A5F7A;
+}
+
+#modal-icon {
+    width: 100px;
+    height: 100px;
+    margin: 15px 0;
+}
+
+#modal-description {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.btn-ver-palavras {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #343a40;
+    color: #fff;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.btn-ver-palavras:hover {
+    background-color: #495057;
+}
+
+.btn-ver-todas {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 30px;
+    background-color: #343a40;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-ver-todas:hover {
+    background-color: #495057;
+}

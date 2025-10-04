@@ -1,0 +1,93 @@
+/* --- ESTILOS PARA AS PÁGINAS DE LOGIN E CADASTRO --- */
+
+.form-page-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 80px);
+    padding: 40px 20px;
+    background-color: #f4f4f4;
+}
+
+.form-box {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.form-box h1 {
+    margin-top: 0;
+    margin-bottom: 30px;
+    color: #333;
+    font-size: 2em;
+}
+
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.btn-submit {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #1A5F7A;
+    color: #fff;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-submit:hover {
+    background-color: #206f8a;
+}
+
+.form-link {
+    margin-top: 25px;
+    font-size: 0.9em;
+}
+
+.form-link a {
+    color: #1A5F7A;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.form-link a:hover {
+    text-decoration: underline;
+}
+
+.error-message {
+    color: #c0392b;
+    background-color: #fbeae9;
+    border: 1px solid #e4a9a5;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: -10px;
+    margin-bottom: 15px;
+    text-align: center;
+    font-weight: bold;
+    display: none;
+}

@@ -1,0 +1,44 @@
+/* --- ESTILOS ESPECÍFICOS DA PÁGINA HOME --- */
+
+.hero-section {
+    background-color: #1A5F7A;
+    color: white;
+    text-align: center;
+    padding: 60px 0;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo-principal {
+    max-width: 200px;
+    height: auto;
+    margin-bottom: 25px;
+}
+
+.hero-subtitle {
+    font-size: 1.2em;
+    margin: 0;
+}
+
+.glossario-section {
+    background-color: #fff;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.glossario-content h2 {
+    font-size: 2.5em;
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.glossario-content p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    color: #555;
+}

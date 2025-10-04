@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glossário e Busca - Glossário de Libras</title>
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/glossario.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="container">
+            <div class="header-brand">IFSP - Câmpus Bragança Paulista</div>
+            <button id="hamburger-btn" class="hamburger-btn">☰</button>
+            <nav id="main-nav" class="main-nav">
+                <ul>
+                    <li><a href="home.html">Início</a></li>
+                    <li><a href="glossario.html">Glossário</a></li>
+                    <li><a href="sobrenos.html">Sobre Nós</a></li>
+                    <li><a href="sugestao.html">Sugestão de palavras</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                    <li id="admin-link" style="display: none;"><a href="admin-add.html">Admin</a></li>
+                    <li id="login-link"><a href="login.html">Login</a></li>
+                    <li id="user-icon-link" style="display: none;">
+                        <a href="#" class="user-icon"><i class="fas fa-user"></i></a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="sub-hero">
+        <p>Termos técnicos de tecnologia em Libras/Português</p>
+    </section>
+
+    <main class="container">
+        <section class="search-section">
+            <h1>Glossário</h1>
+            <div class="search-block">
+                <h2>Busca por Palavras:</h2>
+                <div class="search-bar">
+                    <input type="text" placeholder="Pesquise sua palavra aqui">
+                    <i class="fas fa-search search-icon"></i>
+                </div>
+                <a href="listagem.html" class="btn-ver-todas">Ver Todas as Palavras</a>
+            </div>
+            <div class="search-block">
+                <h2>Busca por Disciplina:</h2>
+                <div class="disciplinas-grid">
+                    <a href="listagem.html" class="disciplina-card" data-disciplina="todas">
+                        <img src="https://img.icons8.com/plasticine/100/checklist.png" alt="Ícone de Checklist">
+                        <span>Listar Todas as Palavras</span>
+                    </a>
+                    <a href="listagem.html" class="disciplina-card" data-disciplina="banco-de-dados">
+                        <img src="https://img.icons8.com/plasticine/100/database.png" alt="Ícone de Banco de Dados">
+                        <span>Banco de Dados</span>
+                    </a>
+                    <a href="listagem.html" class="disciplina-card" data-disciplina="programacao">
+                        <img src="https://img.icons8.com/plasticine/100/source-code.png" alt="Ícone de Programação">
+                        <span>Programação</span>
+                    </a>
+                    <a href="listagem.html" class="disciplina-card" data-disciplina="desenvolvimento-web">
+                        <img src="https://img.icons8.com/plasticine/100/monitor.png" alt="Ícone de Desenvolvimento Web">
+                        <span>Desenvolvimento Web</span>
+                    </a>
+                    <a href="listagem.html" class="disciplina-card" data-disciplina="poo">
+                        <img src="https://img.icons8.com/plasticine/100/code-fork.png" alt="Ícone de POO">
+                        <span>Programação Orientada a Objetos</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="disciplina-modal" class="modal-overlay">
+        <div class="modal-content">
+            <span class="close-button close-modal">&times;</span>
+            <h2 id="modal-title">Título da Disciplina</h2>
+            <div class="star-divider">
+                <i class="fas fa-star"></i>
+            </div>
+            <img id="modal-icon" src="" alt="Ícone da Disciplina">
+            <p id="modal-description">Descrição da disciplina...</p>
+            <button class="btn-ver-palavras">X Ver Palavras</button>
+        </div>
+    </div>
+    
+    <script src="js/main.js"></script>
+    <script src="js/glossario.js"></script>
+</body>
+</html>

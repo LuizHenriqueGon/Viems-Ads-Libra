@@ -1,0 +1,87 @@
+/* --- ESTILOS ESPECÍFICOS DA PÁGINA DE SUGESTÃO --- */
+
+.suggestion-hero {
+    background-color: #1A5F7A;
+    color: #fff;
+    padding: 60px 20px;
+    text-align: center;
+    padding-bottom: 120px; 
+}
+
+.suggestion-hero h1 {
+    margin-top: 0;
+    font-size: 2.5em;
+}
+
+.star-divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+    gap: 15px;
+}
+
+.star-divider::before,
+.star-divider::after {
+    content: '';
+    height: 1px;
+    width: 100px;
+    background-color: #fff;
+}
+
+.star-divider .fa-star {
+    font-size: 1.2em;
+}
+
+.suggestion-form-section {
+    background-color: #fff;
+    padding-bottom: 60px;
+}
+
+.suggestion-form {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: -100px;
+    position: relative;
+    z-index: 10;
+}
+
+.suggestion-form h3 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 1.2em;
+    color: #555;
+    text-align: left;
+}
+
+.suggestion-form textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+.suggestion-form button {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #343a40;
+    color: #fff;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.suggestion-form button:hover {
+    background-color: #495057;
+}
